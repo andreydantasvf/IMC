@@ -17,18 +17,31 @@
   <body>
     <div class="container">
       <main class="card">
-        <h1>Cálculo de IMC</h1>
-
         <form>
-          <label for="weight">Peso (kg)</label>
-          <input type="text" id="weight" name="weight" />
+          <h1 class="title">Cálculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" id="weight" name="weight" placeholder="60" />
+          </div>
 
-          <label for="height">Altura (m)</label>
-          <input type="text" id="height" name="height" />
+          <div class="input-wrapper">
+            <label for="height">Altura (m)</label>
+            <input type="text" id="height" name="height" placeholder="165" />
+          </div>
 
-          <button>Calcular IMC</button>
+          <button type="submit">Calcular IMC</button>
         </form>
       </main>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <button class="close">
+          <img src="./assets/close.svg" alt="Imagem para fechar o popup">
+        </button>
+
+        <h2 class="title">Seu IMC é de 28</h2>
+      </div>
     </div>
   </body>
 </html>
